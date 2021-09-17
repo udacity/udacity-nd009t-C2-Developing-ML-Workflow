@@ -1,0 +1,26 @@
+[
+  {
+    "ChannelName": "train",
+    "DataSource": {
+      "S3DataSource": {
+        "S3DataType": "S3Prefix",
+        "S3Uri": "s3://sagemaker-us-west-2-565094796913/boston-xgboost-HL/train.csv"
+      }
+    },
+    "ContentType": "csv",
+    "InputMode": "File"
+    
+  }, 
+  { 
+    "ChannelName": "validation",
+    "DataSource": {
+      "S3DataSource": {
+        "S3DataType": "S3Prefix",
+        "S3Uri": "s3://sagemaker-us-west-2-565094796913/boston-xgboost-HL/validation.csv"
+      }
+    },
+    "ContentType": "csv",
+    "InputMode": "File"
+    
+  }
+]
